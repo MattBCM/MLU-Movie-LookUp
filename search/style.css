@@ -1,0 +1,97 @@
+html{
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+    background-color: #646FD4;
+}
+#navBar{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #242F9B;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.2);
+}
+#navBar li{
+    float: left;
+    padding: 10px 15px;
+    filter: drop-shadow(0px, 5px, 3px, black);
+}
+#navBar li a, #navBar li form label{
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Muli', Helvetica, sans-serif;
+    font-size: 20px;
+    transition: ease-in 0.2s;
+    cursor: pointer;
+}
+#navBar li a:hover{
+    text-decoration: underline;
+    color: #9BA3EB;
+}
+#signup a{
+    background-color: #DBDFFD;
+    border: black solid 2px;
+    transition: ease-in 0.2s;
+}
+#signup a:hover{
+    background-color: #000000;
+    border: #DBDFFD solid 2px;
+}
+#navlogo{
+    cursor: pointer;
+    width: 50px;
+}
+
+#searchForm{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+#searchInput{
+    position: absolute;
+    height: 25px;
+    top: 25%;
+    left: 300px;
+    width: 300px;
+}
+
+.container{
+    position: absolute;
+    top: 10vh;
+    width: 100vw;
+    justify-content: center;
+}
+.movies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.movieInfo img{
+    width: 300px;
+}
+.movieInfo{
+    padding-top: 30px;
+    border-radius: 50px;
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center;
+    background-color: #9BA3EB;
+    width: 500px;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.movieInfo h2{
+    padding-bottom: 30px;
+}

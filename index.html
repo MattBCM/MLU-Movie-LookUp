@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLU: Movie LookUp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body onload="unBlur()">
+    <!--Navigation Bar-->
+    <ul>
+        <li><img src="images/logo.png" id="navlogo" onclick="backHome()"></li>
+        <li><a href="FAQ/">FAQ</a></li>
+        <li>
+            <form id="searchForm" method="get" action="search/search.html" autocomplete="off">
+                <label for="searchBar" id="labelSearch">Search: </label>
+                <input type="text" name="searchBar" id="searchInput" placeholder="Movie Title...">
+            </form>
+        </li>
+        <li style="float: right;" id="signup"><a href="signup/">Feedback</a></li>
+    </ul>
+
+    <!-- middle-->
+    <div class="container">
+        <div class="left">
+            <h1 id="homeText">Movie LookUp Site</h1>
+            <p>Alpha site that allows you to search up for movies using the free movie database</p>
+            <button onclick="toSignUp()"> Send Feedback!</button> 
+        </div>
+        <div class="right"></div>
+    </div>  
+</body>
+<script src="script.js"></script>
+</html>

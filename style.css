@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap');
+html{
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #242F9B;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.2);
+}
+li{
+    float: left;
+    padding: 10px 15px;
+    filter: drop-shadow(0px, 5px, 3px, black);
+}
+li a, li form label{
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Muli', Helvetica, sans-serif;
+    font-size: 20px;
+    transition: ease-in 0.2s;
+    cursor: pointer;
+}
+li a:hover{
+    text-decoration: underline;
+    color: #9BA3EB;
+}
+#signup a{
+    background-color: #DBDFFD;
+    color: black;
+    border: black solid 2px;
+    transition: ease-in 0.2s;
+}
+#signup a:hover, button{
+    background-color: #9BA3EB;
+}
+#navlogo{
+    cursor: pointer;
+    width: 50px;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #646FD4;
+}
+.left, .right{
+    width: 50%;
+}
+.left{
+    text-align: center;
+}
+.left h1, p{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Muli',Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+}
+.right{
+    background-image: url("http://d279m997dpfwgl.cloudfront.net/wp/2020/12/GettyImages-1150049038-1000x630.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px);
+    transition: ease-in 1s;
+}
+.noBlur{
+    filter: blur(0px);
+}
+button{
+    cursor: pointer;
+    position: relative;
+    top: 45%;
+    font-family: 'Muli', Helvetica, sans-serif;
+    background-color: #DBDFFD;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    border: black, solid, 2px;
+}
+.left h1{
+    font-size: 65px;
+}
+.right{
+    background-color: crimson;
+    float: right;
+}
+#form{
+    flex-direction: column;
+    text-align: center;
+}
+#form h1{
+    position: relative;
+    top: 10%;
+    font-family: 'Muli', Helvetica, sans-serif;
+    color: #ffffff;
+}
+form{
+    position: relative;
+    top:40%;
+}
+#form-container{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 40%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 0;
+}
+#form div label{
+    font-family: 'Muli' , Helvetica, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+#formSubmit{
+    background-color: #DBDFFD;
+    color: black;
+    border: black solid 2px;
+    transition: ease-in 0.2s;
+    font-family: 'Muli', Helvetica, sans-serif;
+    padding: 10px 20px;
+}
+
+@media (max-width: 480px){
+    .container{
+        width: 100vw;
+    }
+    .panel:nth-of-type(4),.panel:nth-of-type(5){
+        display: none;
+    } 
+}
+
+#searchForm{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+#searchInput{
+    position: absolute;
+    height: 25px;
+    top: 25%;
+    left: 100%;
+    width: 300px;
+}
