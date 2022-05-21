@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <ul id="navBar">
+        <li><img src="../images/logo.png" id="navlogo" onclick="backHome()"></li>
+        <li><a href="../FAQ/">FAQ</a></li>
+        <li>
+            <form id="searchForm" method="get" action="../search/search.html" autocomplete="off">
+                <label for="searchBar" id="labelSearch">Search: </label>
+                <input type="text" name="searchBar" id="searchInput" placeholder="Movie Title...">
+            </form>
+        </li>
+        <li style="float: right;" id="signup"><a>Feedback</a></li>
+    </ul>
+
+<div class="overall">
+    <div class="right">
+    <div class="container">
+        <h1 class="title">Feedback Form</h1>
+        <form  method="post" onsubmit="onSubmit()" autocomplete="off">
+            <div class="form-control">
+                <input type="text"  name="name" required id="formname">
+                <label>Full Name</label>
+            </div>
+            <div class="form-control">
+                <input type="email" id="email" name ="email" required>
+                <label>Email</label>
+            </div>
+            <div class="form-control">
+                <input type="text" id="fb" name ="input" required>
+                <label>Feedback</label>
+            </div>
+            <button class="btn" type="submit" name="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

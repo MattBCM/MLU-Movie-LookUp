@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>FAQ</title>
+</head>
+<body>
+    <ul>
+        <li><img src="../images/logo.png" id="navlogo" onclick="backHome()"></li>
+        <li><a href="">FAQ</a></li>
+        <li>
+            <form id="searchForm" method="get" action="../search/search.html" autocomplete="off">
+                <label for="searchBar" id="labelSearch">Search: </label>
+                <input type="text" name="searchBar" id="searchInput" placeholder="Movie Title...">
+            </form>
+        </li>
+        <li style="float: right;" id="signup"><a href="../Feedback/">Feedback</a></li>
+    </ul>
+    <h1>Frequently Asked Questions</h1>
+    <div class="container">
+        <div class="faq active">
+            <h3 class="faq-title">
+                What even is MLU?
+            </h3>
+            <p class="faq-text">
+                MLU is a movie lookup site that uses a movie database api from rapidapi.com. Right now our site is on alpha build and features only looking for movies only. In the future we will be adding features like looking for actors.
+            </p>
+            <button class="faq-toggle">
+                <i class="fa fa-chevron-down"></i>
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+        <div class="faq">
+            <h3 class="faq-title">
+                Where can I give some feedback on the site?
+            </h3>
+            <p class="faq-text">
+                You should be able to see a button on the navigation bar that allows you to submit a form in which we will be able to recieve that form submission and take in consideration it. We'd apprecaite any feedback to make this site more reliable.
+            </p>
+            <button class="faq-toggle">
+                <i class="fa fa-chevron-down"></i>
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+        <div class="faq">
+            <h3 class="faq-title">
+                What kind of features you plan on bringing to this site?
+            </h3>
+            <p class="faq-text">
+                Here are the features that we plan on bringing to users in the coming future: <br>
+                <table class="faq-text">
+                    <th>6 Months Time Period</th>
+                    <th>1 Year Time Period</th>
+                    <th>5 Years Time Period</th>
+                    <tr>
+                        <td>Look up for actors</td>
+                        <td>Recommend movie tickets in local areas</td>
+                        <td>Expand beyond movies</td>
+                    </tr>
+                    <tr>
+                        <td>Give users a summary on the movie</td>
+                        <td>Fix UI to make it mobile friendly</td>
+                        <td>Be able to lookup mostly anything related to movies</td>
+                    </tr>
+                </table>
+            </p>
+            <button class="faq-toggle">
+                <i class="fa fa-chevron-down"></i>
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

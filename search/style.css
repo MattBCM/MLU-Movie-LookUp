@@ -6,6 +6,7 @@ html{
 body{
     margin: 0;
     background-color: #646FD4;
+    height: 100%;
 }
 #navBar{
     list-style-type: none;
@@ -80,6 +81,9 @@ body{
 .movieInfo img{
     width: 300px;
 }
+h2{
+    font-family: 'Muli', Helvetica, sans-serif;
+}
 .movieInfo{
     padding-top: 30px;
     border-radius: 50px;
@@ -94,4 +98,21 @@ body{
 
 .movieInfo h2{
     padding-bottom: 30px;
+}
+
+.circle{
+    position: absolute;
+    background-color: #FFF;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.5s ease-out;
+}
+
+@keyframes scale{
+    to{
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
 }

@@ -32,3 +32,27 @@ fetch(`https://moviesdatabase.p.rapidapi.com/titles/search/title/${encodeURIComp
 	function backHome(){
 		window.location.href="../";
 	}
+
+	const button = document.querySelector('body');
+
+	document.addEventListener('click', (e) => {
+		const x = e.clientX;
+		const y = e.clientY;
+
+		const buttonTop = e.target.offsetTop;
+		const buttonLeft = e.target.offsetLeft;
+
+		const xInside = x - buttonLeft;
+		const yInside = y - buttonTop;
+
+		console.log(xInside, yInside);
+
+		const circle = document.createElement('span');
+		circle.classList.add('circle');
+		circle.style.top = y + 'px';
+		circle.style.left = x + 'px';
+
+		button.appendChild(circle);
+
+		setTimeout(() => circle.remove(), 500);
+	})
